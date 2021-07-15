@@ -1,0 +1,261 @@
+/*============================================================= ALL Media Queries ============================================================== */
+/*==================================================================== Small Mobile Screen =========================================================== */
+@media ( max-width: 767px ) {
+    
+    /*============  FrameWork =================== */
+
+    .main-heading p { margin: 0 auto;}
+
+     /*=============== Nav ==================== */
+    
+    .flex, .flex .list {
+        /* flex-direction: column;
+        align-items: center; */
+        display: block !important;
+        width: 100%;
+        
+    }
+  
+    nav .flex .list { top: 5px !important; transition: .5s !important;}
+
+    .flex .list { margin-top: 1em;}
+
+    .logo { order: -1; align-items: center;}
+
+    /*====== Landing ======= */
+
+    .landing .content {
+        top: 69% !important;
+        width: 100% !important;
+    }
+
+  
+    /*====== Services ========= */
+
+    .main-heading  h3::before { 
+        right: 45% !important;
+    }
+
+    .services .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services .flex  > .box { flex-direction: column;}
+
+    .services .flex  > .box i { flex-direction: column; margin-bottom: 1em; text-align: center;}
+
+
+   
+    /*============  Gallery  ===================== */
+
+    .gallery .flex { flex-direction: column; }
+
+    .gallery .flex .img { order: 1;}
+
+    .gallery .flex .our-skills { width: 100%; margin-top: 3em; text-align: center;}
+
+    .gallery .flex .our-skills h3 { margin-top: .5em;}
+
+    .gallery .flex .our-skills { padding: 1em;}
+
+    .gallery .flex .img {  display: none;}
+
+    .gallery .flex .our-skills .list-skills li::before { display: flex; flex-direction: column; margin-bottom: 1em;}
+
+    /*=============== Portfolio ======================= */
+
+    .portfolio .main-heading { margin-top: 3em;}
+
+    .portfolio .shuffle {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio .shuffle li { width: fit-content; margin: 10px auto !important;}
+
+    .portfolio .content-flex { flex-direction: column;}
+
+    /*============ Video =============== */
+    .video .info { padding: .5em !important;}
+
+    .video .info h3 { margin-bottom: .3em !important;}
+
+    /*========== About =============== */
+    .about .content { position: relative; top: 50px;}
+
+    .about .main-stat { min-height: 160vh;}
+
+    .about .main-stat .cont-stat { flex-direction: column; text-align: center;} 
+
+    .about .main-stat .cont-stat > .box  { width: 100%; margin-bottom: 3em; }
+
+    .about .main-stat .cont-stat > .box:not(:last-of-type) {
+        border-bottom: 1px solid rgb(138, 17, 17);
+    }
+
+    .about .main-stat .cont-stat > .box .ico i { margin:  0 !important; }
+
+    .about .main-stat .cont-stat > .box .ico span { margin-bottom: 1em !important; display: block;}
+
+    /*=========== Testimonials Progress =============== */
+    .testimonials .flex .main-progress .prog span::before {
+        width: 20px !important;
+        height: 20px !important;
+        line-height: 1.3 !important;
+    }
+
+    .testimonials .flex .main-progress .prog span::after {
+        bottom: 88% !important;
+        right: 2px !important;
+    }
+
+        /*=========== Price =================== */
+        .price .flex { flex-direction: column; text-align: center;}
+        .price .flex > .box { flex-basis: 48%;} 
+        /* .price .content { bottom: -30% !important;} */
+    
+        /*============ Subscripe ===================== */
+        .subscribe .flex { flex-direction: column; text-align: center;}
+        .subscribe .flex p { margin: 2em auto; width: 80%;}
+        .subscribe .content form { margin-top: 1.5em;}
+
+        .subscribe .content form input[type='email'],
+        .subscribe .content form button {
+            padding: .4em .8em !important;
+        }
+
+        /*==================== Contact ============================ */
+        .contact .flex .info { flex-direction: column;}
+
+        /*===================== Footer ==================== */
+        footer .flex { flex-direction: column; text-align: center;}
+
+        footer .flex  > div { margin-bottom: 1.3em !important; }
+
+        footer .flex .list-footer a { width: 30px !important; height: 30px !important; line-height: 0 !important;}
+
+        footer .flex .list-footer a i { font-size: .6em !important;}
+
+        /*=============== Frame Work Icon Scroll ======================= */
+
+        .scroll {
+            width: 30px !important;
+            height: 30px !important;
+            right: 5px !important;
+        }
+
+        .scroll > i  { font-size: 1em !important;}
+
+}
+
+
+
+@media ( min-width: 768px ) {
+    .main-heading p { margin: 0 auto;}
+
+    /*=========== Gallery ====================== */
+
+    .gallery .flex .our-skills { padding: 4em;   width: 50%;}
+
+    /*========== About ============= */
+    .about .main-stat { min-height: 50vh;}
+
+/*============ Subscripe ===================== */
+      .subscribe .flex p { font-size: 1.1em; text-transform: capitalize;}
+}
+
+
+   /*======= Medium Screen ============= */
+@media ( max-width: 991px) {
+    nav .flex  { display: block !important; position: relative;}
+        /* dh code 2dem 3la nav bar f media mobile */
+/* nav .flex .list { display: block !important; background-color: rgba(190, 13, 48, 0.452); max-width: 180px; text-align: center; opacity: 0;; position: relative; top: 10px; z-index: 5; margin: auto !important;} */
+    nav .flex .list {
+        display: block !important;
+        background-color: rgba(42, 211, 188, 0.432);
+        width: 100% !important;
+        text-align: center;
+        position: relative;
+        top: 30px;
+        left: -150%;
+        transition: .5s;
+        margin-bottom: 0;
+    }   
+
+    nav .flex .list.show { left: 0; margin: 0;}
+
+    nav .flex .list li a { padding: .5em; display: inline-block !important;}
+
+    nav .flex .logo { display: none;}
+
+    .menu { opacity: 1 !important; margin: auto;}
+
+        /*============ Testimonials ============== */
+        .testimonials .flex { flex-direction: column; text-align: center;}
+    
+        .testimonials .flex > div .content { flex-direction: column;  border-bottom: .5px solid rgb(12, 165, 157);}
+    
+        .testimonials .flex .testi .content img { display: block; margin: 0 auto 1em;}
+    
+        .testimonials .flex > div:last-of-type { margin-top: 1.5em;}
+
+        .testimonials .flex .testi .bullites { display: none !important;}
+
+        /*============ Qute ===================== */
+        .saves > div q::before, .saves > div q::after { display: none;}
+        .saves > div q { width: 280px; display: block; margin: 0 auto 1em; line-height: 1.6 !important; font-size: 1.3em !important;}
+
+    /*=========== Price =================== */
+    .price .flex > .box { flex-basis: 48%;} 
+
+    .price .flex .box .list-price > li:not(:last-of-type)::before { display: none;}
+
+/*========================== Contact ======================================= */
+    .contact .flex { flex-direction: column;}
+    .contact .flex form { width: 100% !important;}
+    .contact .flex form textarea { height: 100px !important;}
+    .contact .flex  form button.button-design-contact {
+        width: fit-content;
+        margin: 0 auto 2em !important;
+    }
+
+    .contact .flex .info  {  display:flex; justify-content: space-around; align-items: center; margin-top: 1em;}
+
+}
+
+
+
+    /*======= XLarge Screen ============= */
+@media ( min-width: 992px ) {
+    .about .main-stat .cont-stat > .box { flex-basis: 24% !important;}
+
+    /*=========== Testimonials =============== */
+    .testimonials .flex .testi .content .text  { 
+        border-bottom: .5px solid rgb(12, 165, 157);
+    }
+
+    .testimonials .flex .main-progress .prog span::before {
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    /*=========== Price =================== */
+    .price .flex > .box { flex-basis: 24%;} 
+
+    /*=============== Contact ===========================  */
+
+    .contact .flex .info  { flex-basis: 15%;}
+
+}
+
+
+/*================================================== Media Range ============================================= */
+
+@media ( min-width: 768px ) and ( max-width: 991px ) {
+
+    /*================== Landing ================================*/
+    .landing .content {
+        top: 66% !important;
+    }
+}
